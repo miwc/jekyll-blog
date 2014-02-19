@@ -1,4 +1,3 @@
-jekyll-blog
-===========
+# Using the Make It With Code blog
 
-Tutorial on using Jekyll for the blog
+Tutorials on how to make Jekyll do stuff for the blog!
