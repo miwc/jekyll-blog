@@ -24,7 +24,9 @@ In the `_posts` directory, add a new file for your article. The naming conventio
 
 Or you could cheat and copy the structure of the existing file names like I did. It should be something like:
 
+  ```
   YYYY-MM-DD-give-me-a-title.md
+  ```
   
 where .md means it's written in Markdown.
 
@@ -32,6 +34,7 @@ where .md means it's written in Markdown.
 
 The easiest way to figure out how to structure a file is to look at one of our previous posts, but again the Jekyll docs are awesome. At the top of the file you need to chuck in some parameters, including layout, title, date and biofooter. Our typical "Front-matter", as Jekyll calls it, is:
 
+  ```
   ---
   layout : post
   title: "Give Me a Title"
@@ -39,10 +42,13 @@ The easiest way to figure out how to structure a file is to look at one of our p
   categories: ruby learning teaching coding etc
   biofooter: false
   ---
+  ```
 
-*Tip:* If you want to upload the post but not publish it yet, you can add a parameter saying:
+**Tip:** If you want to upload the post but not publish it yet, you can add a parameter saying:
 
+  ```
   published: false
+  ```
   
 Underneath this you can add your blog post (written in Markdown). Again, all of the formatting stuff like how to include links and pictures of kittens and things is explained in the Jekyll docs.
 
@@ -50,9 +56,11 @@ Underneath this you can add your blog post (written in Markdown). Again, all of 
 
 Before deploying your blog post to the interwebs, you should probably check it locally to make sure it all looks OK and the links work and such. The command you want is:
 
+  ```
   bundle exec jekyll serve --p YOUR_PORT --watch
+  ```
 
-*Hint:* You want to be in the `miwc.github.io` directory.
+**Hint:** You want to be in the `miwc.github.io` directory.
 
 The `--p YOUR_PORT` bit is there so you can specify your port number, which is the same as your normal IDE one, and then view the page at http://yourusername.ide.makeitwithcode.com:YOUR_PORT
 
@@ -62,7 +70,9 @@ Make sure you stop the server when you're done.
 
 Assuming the new blog post appears and looks beautiful, you're ready to deploy! Run:
 
+  ```
   bundle exec rake jekyll:publish
+  ```
   
 You'll need to enter your GitHub creds, and then it'll be live on the MIWC blog! Unless you said `published: false`, in which case it definitely shouldn't be live yet...
 
@@ -72,8 +82,10 @@ Finally, you need to update the GitHub repository. Despite the fact that it's on
 
 You'll need to use a set of Git commands:
 
+  ```
   git add my_blog_post
   git commit -m "uploading my awesome blog post"
   git push origin source
-
+  ```
+  
 And you're done!
