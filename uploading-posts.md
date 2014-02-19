@@ -6,13 +6,13 @@ Jekyll basically talks us through everything in their documentation: <http://jek
 
 As a starting point, clone the repository: https://github.com/miwc/miwc.github.io
 
-You can work from the IDE or locally...
+You can work from the IDE or locally; unless you have Windows, in which case don't even think about it...
 
 ## Steps
 
 ### Step 1
 
-Ben made our lives easier by adding a Gemfile, you just need to install it in the right directory...
+Ben made our lives easier by adding a Gemfile, you just need to install it in the right directory.
 
 ### Step 2
 
